@@ -81,3 +81,14 @@ console.log(calculateShippingCost(10, "USA", true)); // Expected output: "Shippi
 console.log(calculateShippingCost(5, "Canada", false)); // Expected output: "Shipping Cost: $13.50"
 
 
+// Task 5: Returning Values
+console.log("\nTask 5- Returning Values");
+
+function calculateLoanInterest (principal, rate, years) { // function to return total interest
+    let interest = principal * rate * years;
+    console.log(`Total Interest: $${interest.toFixed(2)}`);
+}
+
+// Logging test data output
+calculateLoanInterest(1000, 0.05, 3);//Expected output: "Total Interest: $150.00"
+calculateLoanInterest(5000, 0.07, 5);//Expected output: "Total Interest: $1750.00"
